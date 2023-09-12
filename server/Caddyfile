@@ -1,5 +1,9 @@
+{
+  debug
+}
+
 api.chat.euanmorgan.uk {
-  reverse_proxy chat-app-1:4001 chat-app-2:4002 chat-app-3:4003 {
-    header_down Strict-Transport-Security max-age=31536000
-  }
+    reverse_proxy chat-app-1:3001 chat-app-2:4000 chat-app-3:5000 {
+        header_down Strict-Transport-Security max-age=31536000
+    }
 }
