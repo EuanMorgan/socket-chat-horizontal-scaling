@@ -8,7 +8,7 @@ import fastifyCors = require('@fastify/cors');
 import sockets from './plugins/sockets';
 dotenv.config();
 
-const PORT = parseInt(process.env.PORT || '3001', 10);
+const PORT = parseInt(process.env.PORT || '4001', 10);
 const HOST = process.env.HOST || '0.0.0.0';
 const CORS_ORIGIN = process.env.CORS_ORIGIN || 'http://localhost:3000';
 
