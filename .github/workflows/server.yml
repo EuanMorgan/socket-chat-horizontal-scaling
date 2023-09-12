@@ -30,4 +30,4 @@ jobs:
             git pull
             cd server
             docker-compose down
-            docker-compose up --project-name blockitio -d --build
+            docker-compose up -d --build
