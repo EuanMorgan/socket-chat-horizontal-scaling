@@ -20,7 +20,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DROPLET_HOST }}
-          username: ${{ secrets.DROPLET_USERNAME }}
+          username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.DROPLET_PRIVATE_KEY }}
           script_stop: true
           script: |
